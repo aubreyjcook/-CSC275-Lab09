@@ -4,7 +4,7 @@ public class Student {
 	public String firstName = "none";
 	public String lastName = "none";
 	public String major = "none";
-	public String gpa = "4.0";
+	public String GPA = "4.0";
 	public String UIN = "0";
 	public String netID = "none";
 	public String age = "0";
@@ -13,15 +13,17 @@ public class Student {
 	// Create an overridden constructor here
 	Student(){}
 	
-	public Student(String firstName, String lastName, String major, String gpa, String UIN, String netID, String age, String gender) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.major = major;
-		this.gpa = gpa;
-		this.UIN = UIN;
-		this.netID = netID;
-		this.age = age;
-		this.gender = gender;
+	public Student(String firstName, String lastName, String major, String GPA, String UIN, String netID, String age, String gender) {
+		Student student = new Student();
+		
+		student.firstName = firstName;
+		student.lastName = lastName;
+		student.major = major;
+		student.GPA = GPA;
+		student.UIN = UIN;
+		student.netID = netID;
+		student.age = age;
+		student.gender = gender;
 	}	
 		
 	// Create accessors and mutators for your traits
@@ -40,7 +42,7 @@ public class Student {
 	}
 	
 	public String getGPA() {
-		return gpa;
+		return GPA;
 	}
 	
 	public String getUIN() {
@@ -74,7 +76,7 @@ public class Student {
 	}
 	
 	public void setGPA(String newGPA) {
-		this.gpa = newGPA;
+		this.GPA = newGPA;
 	}
 	
 	public void setUIN(String newUIN) {
@@ -94,22 +96,22 @@ public class Student {
 	}	
 	
 	/*
-	public void addInfo(String addfirstName, String addlastName, String addmajor, String addgpa, String addUIN, String addnetID, String addage, String addgender) {
+	public void addInfo(String addfirstName, String addlastName, String addmajor, String addGPA, String addUIN, String addnetID, String addage, String addgender) {
 		firstName = addfirstName;
 		lastName = addlastName;
 		major = addmajor;
-		gpa = addgpa;
+		GPA = addGPA;
 		UIN = addUIN;
 		netID = addnetID;
 		age = addage;
 		gender = addgender;
 	}
 	
-	public void addInfo(String addfirstName, String addlastName, String addmajor, String addgpa, String addUIN, String addnetID, String addage, String addgender) {
+	public void addInfo(String addfirstName, String addlastName, String addmajor, String addGPA, String addUIN, String addnetID, String addage, String addgender) {
 		firstName = addfirstName;
 		lastName = addlastName;
 		major = addmajor;
-		gpa = addgpa;
+		GPA = addGPA;
 		UIN = addUIN;
 		netID = addnetID;
 		age = addage;
